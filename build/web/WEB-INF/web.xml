@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Online Attendance Management System</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ========== SESSION FILTER ========== -->
+    <filter>
+        <filter-name>SessionFilter</filter-name>
+        <filter-class>servlet.SessionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SessionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- ========== AUTHENTICATION ========== -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- ========== ADMIN SERVLETS ========== -->
+    <servlet>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <servlet-class>servlet.AdminDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <url-pattern>/admin/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddTeacherServlet</servlet-name>
+        <servlet-class>servlet.AddTeacherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTeacherServlet</servlet-name>
+        <url-pattern>/admin/addTeacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewTeachersServlet</servlet-name>
+        <servlet-class>servlet.ViewTeachersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewTeachersServlet</servlet-name>
+        <url-pattern>/admin/viewTeachers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>servlet.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/admin/addStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewStudentsServlet</servlet-name>
+        <servlet-class>servlet.ViewStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewStudentsServlet</servlet-name>
+        <url-pattern>/admin/viewStudents</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddClassServlet</servlet-name>
+        <servlet-class>servlet.AddClassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddClassServlet</servlet-name>
+        <url-pattern>/admin/addClass</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSubjectServlet</servlet-name>
+        <servlet-class>servlet.AddSubjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddSubjectServlet</servlet-name>
+        <url-pattern>/admin/addSubject</url-pattern>
+    </servlet-mapping>
+
+    <!-- ========== TEACHER SERVLETS ========== -->
+    <servlet>
+        <servlet-name>TeacherDashboardServlet</servlet-name>
+        <servlet-class>servlet.TeacherDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherDashboardServlet</servlet-name>
+        <url-pattern>/teacher/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TakeAttendanceServlet</servlet-name>
+        <servlet-class>servlet.TakeAttendanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TakeAttendanceServlet</servlet-name>
+        <url-pattern>/teacher/takeAttendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewAttendanceServlet</servlet-name>
+        <servlet-class>servlet.ViewAttendanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAttendanceServlet</servlet-name>
+        <url-pattern>/teacher/viewAttendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateAttendanceServlet</servlet-name>
+        <servlet-class>servlet.UpdateAttendanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateAttendanceServlet</servlet-name>
+        <url-pattern>/teacher/updateAttendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>servlet.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+
+    <!-- ========== STUDENT SERVLETS ========== -->
+    <servlet>
+        <servlet-name>StudentDashboardServlet</servlet-name>
+        <servlet-class>servlet.StudentDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentDashboardServlet</servlet-name>
+        <url-pattern>/student/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewMyAttendanceServlet</servlet-name>
+        <servlet-class>servlet.ViewMyAttendanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewMyAttendanceServlet</servlet-name>
+        <url-pattern>/student/viewMyAttendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentProfileServlet</servlet-name>
+        <servlet-class>servlet.StudentProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentProfileServlet</servlet-name>
+        <url-pattern>/student/profile</url-pattern>
+    </servlet-mapping>
+
+    <!-- ========== SESSION TIMEOUT (30 minutes) ========== -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>
