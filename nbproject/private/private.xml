@@ -2,29 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/StudentDashboardServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/student/studentDashboard.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/StudentProfileServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/student/studentProfile.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/ViewMyAttendanceServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/student/viewMyAttendance.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/TeacherDashboardServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/teacher/teacherDashboard.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/TakeAttendanceServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/teacher/takeAttendance.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/ViewAttendanceServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/teacher/viewAttendance.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/UpdateAttendanceServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/ReportServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/teacher/teacherReport.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/SessionFilter.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/login.jsp</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/LogoutServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/LoginServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/AddClassServlet.java</file>
-            <file>file:/C:/Users/itali/OneDrive/Desktop/AJT/Online_Attendance_Management_System/src/java/servlet/AddStudentServlet.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
